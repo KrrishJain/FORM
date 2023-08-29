@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Form.css">
+    <title>Form</title>
+</head>
+<body>
+   <main> 
+    <div class="container">
+        <div class="intro">
+            <h1>Apply For SAKEC Research Cell</h1>
+            <div class="logoholder">
+                <img id="rcell" src="/img/Rcell-removebg-preview.png" alt="">
+                <img id="logoi" src="img/SAKEC-removebg-preview.png" alt="">
+            </div>
+        </div>
+        <div class="Formholder">
+            <span id="head">Register Here</span>
+            <form action="">
+                <div>
+                    <label>Name<span>*</span></label>
+                    <br>
+                    <input id="nameInput" type="text">
+                </div>
+                <br>
+                <div>
+                    <label>Date of birth<span>*</span></label>
+                    <br>
+                    <input id="DOB" type="date">
+                </div>
+                <br>
+                <div>
+                    <label>Email<span>*</span></label>
+                    <br>
+                    <input spellcheck="false" id="emailInput" type="text" onkeyup="validateEmail()">
+                    <br>
+                    <span id="errorSpan"></span>
+                </div>
+                <div id="class">
+                   <div>
+                    <label>Branch</label>
+                     <br>
+                    <select id="branch">
+                        <option value=" "> </option>
+                      <option value="Computer Engineering">Computer Engineering</option>
+                      <option value="Information Technology">Information Technology</option>
+                      <option value="Electronics & Computer Science">Electronics & Computer Science</option>
+                      <option value="Artificial Intelligence & Data Science">Artificial Intelligence & Data Science</option>
+                    </select>
+                   </div>
+                 <div>
+                     <label>Year</label>
+                     <br>
+                    <select id="year">
+                        <option value=" "> </option>
+                      <option value="First Year">First Year</option>
+                      <option value=">Second Year">Second Year</option>
+                      <option value="Third Year">Third Year</option>
+                      <option value=">Fourth Year">Fourth Year</option>
+                    </select>
+                 </div>
+                </div>
+                <div class="btn">
+                    <button  class="button">Submit</button>
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+   </main> 
+   <script src="/Form.js "></script>
+</body>
+</html>
